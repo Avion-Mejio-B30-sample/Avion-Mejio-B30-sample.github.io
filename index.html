@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang: "en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <link rel="stylesheet" href="style.css">
+  <Title>Elon Musk Tibute</Title>
+</head>>
+
+  
+<body>
+
+<section>
+  <img class="Slides" src="Asset/Image_1.jpg" style="width:100%">
+  <img class="Slides" src="Asset/Image_2.jpg" style="width:100%">
+  <img class="Slides" src="Asset/Image_3.jpg" style="width:100%">
+</section>
+  
+<section id="main">
+  <h1 id="title">Elon Musk</h1>
+    <div id="img-div">
+      <img id="image" src="Asset/Elon.png" alt="Elon Musk"> 
+      <p id="img-caption"> A visionary entrepreneur and technology pioneer known for his bold ambitions in the fields of space exploration, electric vehicles, and renewable energy. With his relentless drive and innovative mindset, he has become a transformative figure, pushing the boundaries of what's possible and inspiring a new era of technological advancements.
+      </p>
+    </div
+ </section>
+
+<section id="tribute-info">
+  <div class="About hoverable"> 
+    <h3>About Elon Musk</h3>
+     <p>Elon Musk is a visionary entrepreneur and business magnate. He is known for co-founding Tesla Motors, SpaceX, Neuralink, and The Boring Company. Musk is also recognized for his ambitious goal of revolutionizing transportation and space exploration.
+     </p>
+  </div> 
+      
+  <div class="Life hoverable">
+    <h3>Early Life and Education</h3>
+      <p>Elon Musk was born on June 28, 1971, in Pretoria, South Africa. He developed an interest in computing and technology at a young age and taught himself computer programming. Musk pursued higher education at the University of Pennsylvania, where he earned degrees in physics and economics.
+      </p>
+  </div> 
+      
+  <div class="Ventures hoverable">
+    <h3>Entrepreneurial Ventures</h3>
+      <p>Musk went on to establish several successful companies, including PayPal, which revolutionized online payment systems. He later turned his attention to the electric vehicle industry and founded Tesla Motors, a company that has played a significant role in the adoption of electric cars.
+      </p>
+  </div>       
+</section>
+            
+  <div class="Additional-info">
+    <p>In addition to Tesla, Musk founded SpaceX, a privateaerospace manufacturer and space transportation company. SpaceX has made remarkable achievements, such as launching reusable rockets and contributing to space exploration. Musk's other ventures include Neuralink, focused on developing brain-machine interfaces, and The Boring Company, aimed at revolutionizing tunnel construction.
+    </p>
+  </div>  
+  
+<footer>
+ <p><a id="tribute-link" href="https://www.biography.com/business-leaders/elon-musk" target="_blank">Learn more about Elon Musk</a> 
+ </p>
+</footer>
+
+  
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>  
+</body>
+</html>
